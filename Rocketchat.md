@@ -58,11 +58,14 @@ The output should show an external IP address in the EXTERNAL-IP column.
 10. Access Rocket Chat using the external IP address in your web browser.
 
 11. You can easily connect to the remote instance from your browser. Forward the webserver port to localhost:8888
-
+https://localhost:8888
 ```
 kubectl port-forward --namespace rocketchat $(kubectl get pods --namespace rocketchat -l "app.kubernetes.io/name=rocketchat,app.kubernetes.io/instance=rocketchat" -o jsonpath='{ .items[0].metadata.name }') 8888:3000
+```
+
+12. Uninstalling the Chart
+To uninstall/delete the rocketchat deployment:
+```
+helm delete rocketchat
 ``
-https://localhost:8888
-
-
 That's it! You have now installed Rocket Chat on Kubernetes with an external MongoDB database using Helm.
