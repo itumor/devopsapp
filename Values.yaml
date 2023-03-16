@@ -3,7 +3,7 @@ mongodb:
     passwords:
       - rocketchat
     rootPassword: rocketchatroot
-  mongodbUri: mongodb://admin:2nJami9FzOD4ocod@cluster0.iws1lhb.mongodb.net/test
+  mongodbUri: mongodb://admin:qut0HHdryUdwL75a@cluster0.iws1lhb.mongodb.net/test
 rocketchat:
   externalDatabase:
     enabled: true
